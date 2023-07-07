@@ -7,12 +7,12 @@ import { FaGithub } from 'react-icons/fa';
 export default function Home() {
   return (
     <main className="h-screen overflow-hidden bg-primary center py-10 text-white w-screen" style={{backgroundImage: "url('Texture.png')"}}>
-      <div className='w-[85%] center flex-col'>
+      <div className='lg:w-[85%] sm:w-[90%] center flex-col'>
         {/* Navbar starts */}
-        <nav className='w-full between z-50'>
-          <div className='font-bold text-lg tracking-wider'><Link href="/">FlowPrice Oracle</Link></div>
+        <nav className='w-full h-[10vh] between z-50'>
+          <div className='font-bold md:text-lg tracking-wider'><Link href="/">FlowPrice Oracle</Link></div>
           <ul>
-            <li>Smart Contract API Docs</li>
+            <li className='text-sm md:text-md'>Smart Contract API Docs</li>
           </ul>
           <div className='w-[20%] flex items-end justify-end'>
             <a href="#"><FaGithub /></a>
@@ -20,8 +20,8 @@ export default function Home() {
         </nav>
         {/* Navbar ends */}
         {/* Hero starts */}
-        <div className='w-full my-[9rem] center relative'>
-          <h1 className='font-bold capitalize tracking-wider text-xxxl w-4/5 text-center'>On-Chain realtime crypto price</h1>
+        <div className='w-full h-[90vh] center relative'>
+          <h1 className='font-bold capitalize tracking-wider md:text-xxxl text-xl lg:w-4/5 text-center'>On-Chain realtime crypto price</h1>
         </div>
         {/* Hero ends */}
         {/* Gradients and images starts */}
@@ -40,26 +40,26 @@ export default function Home() {
           <div className='z-30 center overflow-hidden w-full h-full'>
             <img src="/Bitcoin.png" alt="bitcoin" style={{ position: 'absolute', top: 80, left: 100, zIndex: 3, }} />
           </div>
-          <div className='z-30 center overflow-hidden w-full h-full'>
+          <div className='z-30 center sm:hidden md:flex overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/starleft.svg" alt="Ellipse" style={{ position: 'absolute', top: 180, left: 250, zIndex: 3, }} />
           </div>
-          <div className='z-30 center overflow-hidden w-full h-full'>
+          <div className='z-30 center overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/sphereGold.png" alt="Ellipse" style={{ position: 'absolute', top: 300, left: 55, zIndex: 3, }} />
           </div>
-          <div className='z-30 center  overflow-hidden w-full h-full'>
+          <div className='z-30 center  overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/moon.svg" alt="Ellipse" style={{ position: 'absolute', top: 300, right: -55, zIndex: 3, }} className='moonGradient' />
           </div>
-          <div className='z-30 center  overflow-hidden w-full h-full'>
+          <div className='z-30 center  overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/starright1.svg" alt="Ellipse" style={{ position: 'absolute', top: 100, right: 150, zIndex: 3, }} />
           </div>
-          <div className='z-30 center  overflow-hidden w-full h-full'>
+          <div className='z-30 center  overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/starright2.svg" alt="Ellipse" style={{ position: 'absolute', top: 150, right: 50, zIndex: 3, }} />
           </div>
-          <div className='z-30 center  overflow-hidden w-full h-full'>
+          <div className='z-30 center  overflow-hidden sm:hidden md:flex w-full h-full'>
             <img src="/starright3.svg" alt="Ellipse" style={{ position: 'absolute', bottom: 50, right: 100, zIndex: 3, }} />
           </div>
           <div className='z-30 center  overflow-hidden w-full h-full'>
-            <img src="/Etherium.png" alt="Ellipse" style={{ position: 'absolute', bottom: 100, right: 200, zIndex: 3, }} />
+            <img src="/Etherium.png" alt="Ellipse" style={{ position: 'absolute', bottom: 40, right: 200, zIndex: 3, }} />
           </div>
         </div>
         {/* Gradients and images ends */}
