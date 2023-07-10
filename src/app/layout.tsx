@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="clash">{children}</body>
+      <body className="poppins overflow-x-hidden">{children}</body>
     </html>
   )
 }

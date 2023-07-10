@@ -1,4 +1,5 @@
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +22,10 @@
   font-family: 'Clash Display', sans-serif;
 }
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
 .leftGradient {
   width: 300px;
   height: 400px;
@@ -41,4 +46,14 @@
   border-radius: 259px;
   background: linear-gradient(113deg, #DECAFF 0%, #691EE2 100%);
   box-shadow: -35.035789489746094px -50.05112838745117px 80.0999984741211px 0px rgba(172, 60, 225, 0.76) inset, 0px 20.020450592041016px 40px 0px rgba(194, 255, 255, 0.25) inset, 0px 0px 24px 0px rgba(255, 255, 255, 0.26) inset;
+}
+
+@media (max-width: 640px) {
+  .flow-icon {
+    position: absolute;
+    top: 100px;
+    right: 2rem;
+    width: 80px;
+    z-index: 3;
+  }
 }
