@@ -8,7 +8,7 @@ import * as fcl from "@onflow/fcl";
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Home() {
-  const [user, setUser] = useState({loggedIn: null})
+  const [user, setUser] = useState({ loggedIn: null, addr: null });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleOpenMenu = () => {
