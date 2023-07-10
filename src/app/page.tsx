@@ -19,10 +19,16 @@ export default function Home() {
     setIsMenuOpen(false);
   };
 
-  useEffect(() => fcl.currentUser.subscribe((userData) => {
-    setUser(userData);
-    console.log(userData);
-  }), [])
+  useEffect(() => {
+    const subscription = fcl.currentUser.subscribe((userData: any) => {
+      setUser(userData);
+      console.log(userData);
+    });
+  
+    return () => {
+      subscription();
+    };
+  }, []);
 
   function AuthedState() {
     return (
