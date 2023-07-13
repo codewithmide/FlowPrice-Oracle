@@ -70,7 +70,12 @@ export default function Home() {
           <div className='between w-full'>
             <div className='font-bold md:text-md tracking-wider clash'><Link href="/">FlowPrice Oracle</Link></div>
             <ul className='center md:flex gap-6 sm:hidden'>
-              <li className='text-[1rem]'>Whitepaper</li>
+              <li>
+                <a href="https://flow-hackaton.gitbook.io/flowpricesoracle/" target="_blank" className='text-[1rem]'>Whitepaper</a>
+              </li>
+              <li>
+                <a href="https://flow-hackaton.gitbook.io/flowpricesoracle/public-smartcontract-api" target="_blank" className=''>Devs</a>
+              </li>
             </ul>
             <div className='md:flex items-end justify-end hidden'>
               {user.loggedIn
@@ -94,7 +99,12 @@ export default function Home() {
                   </button>
                 </div>
                 <ul className='flex gap-6 center'>
-                  <li className='text-[1rem]'>Whitepaper</li>
+                  <li>
+                    <a href="https://flow-hackaton.gitbook.io/flowpricesoracle/" target="_blank">Whitepaper</a>
+                  </li>
+                  <li>
+                    <a href="https://flow-hackaton.gitbook.io/flowpricesoracle/public-smartcontract-api" target="_blank">Devs</a>
+                  </li>
                 </ul>
                 <div className='center'>
                   {user.loggedIn
