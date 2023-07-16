@@ -42,7 +42,7 @@ export default function Home() {
   const UnauthenticatedState = () => {
     return (
       <div className='flex gap-3'>
-        <button onClick={fcl.signUp} className='bg-green px-6 py-2 text-[.9rem] hover:scale-95 transition-all duration-300'>Become Validator</button>
+        <a href="https://flow-hackaton.gitbook.io/flowpricesoracle/validator-docs/become-a-validator" target="_blank" className='bg-green px-6 py-2 text-[.9rem] hover:scale-95 transition-all duration-300'>Become Validator</a>
         <button onClick={fcl.logIn} className='border border-green text-green px-6 py-2 text-[.9rem] hover:scale-95 transition-all duration-300'>Login</button>
       </div>
     )
